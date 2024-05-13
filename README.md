@@ -1,0 +1,2 @@
+- Tramite una variabile timeLeft inizializzata a 10, ci sarà un primo richiamo alla funzione countdown() che 
+    eseguirà le operazioni necessarie e si auto richiamerà ogni 1000 ms fin tanto che timeLeft non sarà 0;
