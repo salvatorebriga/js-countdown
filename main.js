@@ -1,6 +1,7 @@
 "use strict"
 
 let timeLeft = 10;
+const stopCountdown = document.getElementById('stopCountdown');
 
 function countdown(){
     if(timeLeft === 0){
@@ -17,3 +18,9 @@ function countdown(){
 
 /*primo richiamo alla funzione*/
 setTimeout(countdown, 1000);
+
+/*evento con funzione anonima per fermare subito il countdown*/
+stopCountdown.addEventListener('click', function() {
+    timeLeft = 0;
+    console.log(timeLeft);
+} )
